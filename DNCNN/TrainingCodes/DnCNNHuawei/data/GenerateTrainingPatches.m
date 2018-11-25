@@ -6,7 +6,8 @@ clear;close all;
 
 %Data size should approximate 
 %212096         128        1657 (from bw orig)
-%40          40           1      212096  49024
+%40          40           1      212096  
+%40          40           3      488192
 addpath('utilities');
 
 batchSize      = 128;        %%% batch size
@@ -20,7 +21,7 @@ end
 
 
 patchsize     = 40;
-stride        = 40;
+stride        = 80;
 step          = 0;
 
 count   = 0;
