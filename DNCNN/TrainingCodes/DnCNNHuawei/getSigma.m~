@@ -1,0 +1,5 @@
+function thisSigma = getSigma(inputRect)
+
+blurrredIm = imgaussfilt(inputRect,8);
+thisNoise = inputRect-blurredIm;
+thisSigma = std2(

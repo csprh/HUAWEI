@@ -1,0 +1,35 @@
+functinon CropIms;
+
+inDir = './Buildings/Clean/';
+outDir = './Train/Buildings/Clean/';
+cropImsDir(inDir, outDir);
+inDir = './Buildings/Noisy/';
+outDir = './Train/Buildings/Noisy/';
+cropImsDir(inDir, outDir);
+inDir = './Text/Clean/';
+outDir = './Train/Text/Clean/';
+cropImsDir(inDir, outDir);
+inDir = './Text/Noisy/';
+outDir = './Train/Text/Noisy/';
+cropImsDir(inDir, outDir);
+inDir = './Foliage/Clean/';
+outDir = './Train/Foliage/Clean/';
+cropImsDir(inDir, outDir);
+inDir = './Foliage/Noisy/';
+outDir = './Train/Foliage/Noisy/';
+cropImsDir(inDir, outDir);
+
+
+
+
+function cropImsDir(inDir, outDir)
+	mkdir(outDir);
+
+	imList = dir([inDir '*.png']);
+	noOfIms = length(imList);
+	forsImName = imList(sImName = imList(me;
+           thisIm = imread([inDir thisImName]);
+       thisIm = imcrop(thisIm, [1 1 1023 1023]);
+    imwrite(thisIm,[outDir thisImName]);
+    %imagesc(thisIm);
+end    
