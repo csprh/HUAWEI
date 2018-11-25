@@ -109,10 +109,10 @@ end
 %%% save data
 save(fullfile(dataName,['imdb_',num2str(patchsize),'_',num2str(batchSize)]), 'inputs','cleaninputs','set','-v7.3')
 
-function output = getThisPath(baseDir, imName,cleanNoisy, classes)
+function output = getThisPath(baseDir, imName,cleanNoisy, classesA)
 
-for ii = 1: length(classes)
-    thisClass = classes{ii};
+for ii = 1: length(classesA)
+    thisClass = classesA{ii};
     thisPath = dir ([baseDir thisClass cleanNoisy imName]);
     if length(thisPath) == 1 
         output = [baseDir thisClass cleanNoisy imName];
