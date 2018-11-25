@@ -29,16 +29,16 @@ count   = 0;
 load theseIndices
 
 theseNHO = inds.NHO;
-classes{1} = 'Buildings/';
-classes{2} = 'Foliage/';
-classes{3} = 'Text/';
+classesA{1} = 'Buildings/';
+classesA{2} = 'Foliage/';
+classesA{3} = 'Text/';
 for ii = 1:length(theseNHO)
 %for ii = 1:5
     thisInd = theseNHO(ii);
     thisInd = 663;
     imName = ['Image_' num2str(thisInd) '.png']; 
-    filepaths{ii}.Clean = getThisPath(baseDir,classes,imName,'Clean/');
-    filepaths{ii}.Noisy = getThisPath(baseDir,classes,imName,'Noisy/');
+    filepaths{ii}.Clean = getThisPath(baseDir,classesA,imName,'Clean/');
+    filepaths{ii}.Noisy = getThisPath(baseDir,classesA,imName,'Noisy/');
 end
 
 
