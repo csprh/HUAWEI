@@ -21,7 +21,7 @@ end
 
 
 patchsize     = 40;
-stride        = 80;
+stride        = 40;
 step          = 0;
 
 count   = 0;
