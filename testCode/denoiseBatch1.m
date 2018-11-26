@@ -76,7 +76,7 @@ end
 
 
 
-end
+
 toc;
 
 function output = getThisPath(baseDir, classesA,imName,cleanNoisy)
