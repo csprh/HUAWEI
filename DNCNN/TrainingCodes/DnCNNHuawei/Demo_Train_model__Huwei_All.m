@@ -12,6 +12,7 @@ sigma = 25;
 %%%-------------------------------------------------------------------------
 opts.modelName        = 'model_Huwei_All'; %%% model name
 opts.learningRate     = [logspace(-3,-3,30) logspace(-4,-4,20)];%%% you can change the learning rate
+opts.learningRate     = [logspace(-3,-3,12) logspace(-4,-4,7)];
 opts.batchSize        = 128;
 opts.gpus             = []; %%% this code can only support one GPU!
 opts.numSubBatches    = 2;
